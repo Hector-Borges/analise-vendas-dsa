@@ -97,8 +97,8 @@ python src/gerar_dados.py
 
 ## 👤 Autor
 
-**[Seu Nome]**
-🔗 [LinkedIn](https://www.linkedin.com/in/SEU-PERFIL) · 💻 [GitHub](https://github.com/SEU-USUARIO)
+**Hector Costa Borges**
+🔗 [LinkedIn](www.linkedin.com/in/hc-borges) · 💻 [GitHub](https://github.com/Hector-Borges)
 
 ---
 
