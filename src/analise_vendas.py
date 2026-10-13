@@ -1,15 +1,3 @@
-"""
-Análise de vendas fictícias e dashboard com as 4 perguntas de negócio:
-
-    1) O que vender?        -> produtos mais vendidos (unidades)
-    2) Quando agir?         -> mês com maior faturamento
-    3) O que focar?         -> categoria mais vendida (unidades)
-    4) Para onde expandir?  -> estado com maior faturamento
-
-Uso:
-    python src/analise_vendas.py
-"""
-
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -24,9 +12,8 @@ DESTAQUE = "#E4572E"  # item vencedor
 NORMAL = "#4C78A8"    # demais itens
 
 
-# ----------------------------------------------------------------------
 # Carga e preparação
-# ----------------------------------------------------------------------
+
 def carregar_dados(caminho: Path = CAMINHO_CSV) -> pd.DataFrame:
     """Lê o CSV e garante os tipos e colunas necessários."""
     df = pd.read_csv(caminho, parse_dates=["Data_Pedido"])
@@ -38,9 +25,8 @@ def carregar_dados(caminho: Path = CAMINHO_CSV) -> pd.DataFrame:
     return df
 
 
-# ----------------------------------------------------------------------
 # As 4 perguntas
-# ----------------------------------------------------------------------
+
 def responder_perguntas(df: pd.DataFrame) -> dict[str, pd.Series]:
     """Calcula as séries usadas para responder cada pergunta."""
     return {
@@ -63,9 +49,8 @@ def imprimir_resumo(r: dict[str, pd.Series]) -> None:
     print("=" * 55)
 
 
-# ----------------------------------------------------------------------
 # Dashboard
-# ----------------------------------------------------------------------
+
 def _cores(n: int) -> list[str]:
     """Primeira barra (a maior) em destaque, as demais na cor normal."""
     return [DESTAQUE] + [NORMAL] * (n - 1)
