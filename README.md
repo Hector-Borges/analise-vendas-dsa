@@ -98,7 +98,7 @@ python src/gerar_dados.py
 ## 👤 Autor
 
 **Hector Costa Borges**
-🔗 [LinkedIn](www.linkedin.com/in/hc-borges) · 💻 [GitHub](https://github.com/Hector-Borges)
+🔗 [LinkedIn](https://www.linkedin.com/in/hc-borges) · 💻 [GitHub](https://github.com/Hector-Borges)
 
 ---
 
